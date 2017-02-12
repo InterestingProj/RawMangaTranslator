@@ -3,7 +3,7 @@ import json
 from pprint import pprint
 from google.cloud import translate
 
-image_url = "http://i.imgur.com/B12UFBn.png"
+image_url = input("Enter an image URL to one of the pages in a manga chapter: ")
 headers = {"ocp-apim-subscription-key": "f560dba46ad945feaadeaab2846ea16c", "content-type": "application/json"}
 payload = {"language": "unk", "orientation": "true"}
 data = {"url": image_url}
